@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="525.0" prefWidth="530.0" styleClass="backdrop" xmlns:fx="http://javafx.com/fxml" fx:controller="Controllers.MainController">
+  <children>
+    <Button id="button2" fx:id="trackButton" onAction="#track" text="Track" visible="false" AnchorPane.bottomAnchor="114.0" AnchorPane.rightAnchor="53.0" />
+    <VBox id="vBox1" fx:id="leftVBox" minHeight="347.0" minWidth="349.0" prefHeight="360.0" prefWidth="360.0" spacing="10.0" AnchorPane.bottomAnchor="124.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="159.0" AnchorPane.topAnchor="41.0">
+      <children>
+        <ImageView id="emptyImageView1" fx:id="imageView" fitHeight="360.0" fitWidth="360.0" mouseTransparent="true" smooth="false" VBox.vgrow="ALWAYS" />
+        <Slider id="sliderHorizontal1" fx:id="frameSlider" prefWidth="334.0" visible="false" VBox.vgrow="ALWAYS">
+          <VBox.margin>
+            <Insets bottom="20.0" />
+          </VBox.margin>
+        </Slider>
+      </children>
+      <padding>
+        <Insets bottom="10.0" fx:id="x1" />
+      </padding>
+    </VBox>
+    <VBox id="vBox2" fx:id="rightVBox" alignment="TOP_CENTER" prefHeight="346.0000999999975" prefWidth="144.0" spacing="5.0" AnchorPane.bottomAnchor="138.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="41.0" />
+    <MenuBar id="menuBar1" prefWidth="530.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <menus>
+        <Menu id="fileMenu1" text="File">
+          <items>
+            <MenuItem id="menuItem1" onAction="#loadImage" text="Load Image" />
+            <MenuItem id="close1" onAction="#exitApp" text="Exit" />
+          </items>
+        </Menu>
+        <Menu id="menu1" text="Tracks">
+          <items>
+            <MenuItem id="menuItem2" text="Save Tracks..." />
+          </items>
+        </Menu>
+        <Menu id="helpMenu1" text="Help">
+          <items>
+            <MenuItem id="about1" text="About" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <ProgressBar id="progressBar1" fx:id="progressBar" prefWidth="130.0" progress="0.0" visible="false" AnchorPane.bottomAnchor="96.0" AnchorPane.leftAnchor="389.5" AnchorPane.rightAnchor="10.5" />
+    <TextArea id="textArea1" fx:id="console" editable="false" layoutY="443.0" prefHeight="82.0" prefWidth="530.0" visible="false" />
+  </children>
+  <stylesheets>
+    <URL value="@GUVLook.css" />
+  </stylesheets>
+</AnchorPane>

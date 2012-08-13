@@ -1,0 +1,13 @@
+.root {
+    -fx-font: regular 14pt "Gill Sans";
+}
+
+.backdrop {
+    -fx-background-color:linear-gradient(white,#DDDDDD);
+}
+
+.button {
+    -fx-font-size: 12pt;
+}
+
+

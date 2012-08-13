@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" styleClass="backdrop" xmlns:fx="http://javafx.com/fxml" fx:controller="Controllers.TracksController">
+  <children>
+    <LineChart id="LineChart" fx:id="lineChart" animated="false" createSymbols="false" horizontalGridLinesVisible="false" horizontalZeroLineVisible="false" legendVisible="false" prefHeight="400.0000999999975" prefWidth="400.0" snapToPixel="false" verticalGridLinesVisible="false" verticalZeroLineVisible="false" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <xAxis>
+        <NumberAxis id="xAxis1" animated="false" autoRanging="false" minHeight="1.0" prefHeight="1.0" prefWidth="353.0" side="BOTTOM" snapToPixel="false" tickLabelsVisible="false" tickMarkVisible="false" upperBound="128.0" visible="false" />
+      </xAxis>
+      <yAxis>
+        <NumberAxis id="yAxis1" autoRanging="false" prefHeight="370.0" prefWidth="2.0" side="LEFT" snapToPixel="false" tickLabelsVisible="false" tickMarkVisible="false" upperBound="128.0" visible="false" />
+      </yAxis>
+    </LineChart>
+  </children>
+  <stylesheets>
+    <URL value="@GUVLook.css" />
+  </stylesheets>
+</AnchorPane>
